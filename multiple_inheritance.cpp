@@ -1,4 +1,5 @@
 
+
 #include<bits/stdc++.h>
 using namespace std;
 class animal
@@ -9,14 +10,14 @@ public:
         cout<<"Animal is eating"<<endl;
     }
 };
-class dog: public animal{//chain wise inherite kirbe
+class dog{//tree wise inherite kirbe
 public:
     void bark()
     {
         cout<<"dog is barking"<<endl;
     }
 };
-class Dogtype: public dog{
+class Dogtype: public dog,public animal{
 public:
     void cry()
     {
@@ -32,4 +33,3 @@ int main()
     d.bark();
     d.cry();
 }
-
